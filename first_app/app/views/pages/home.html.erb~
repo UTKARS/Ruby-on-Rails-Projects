@@ -1,0 +1,7 @@
+		<h1>HELLO, RAILS</h1>
+		<h2> This is my first try! </h2>
+		<p>Find file with this words in app/views/pages/home.html.erb</p>
+<%= link_to 'New post', :controller => "microposts", :action => :new %>
+<%= link_to 'New user', :controller => "users", :action => :new %>
+<%= link_to "Sign up now!", '#', :class => "signup_button round" %>
+
