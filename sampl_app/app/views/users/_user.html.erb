@@ -1,6 +1,6 @@
 <li>
   <%= link_to user.name, user %>
   <% if current_user.admin? %>
-  | <%= link_to 'Destroy', user, method: :destroy, data: { confirm: 'Are you sure?' } %>
+  | <%= link_to 'Удалить', user, method: :destroy, data: { confirm: 'Вы уверены?' } %>
   <% end %>
 </li>

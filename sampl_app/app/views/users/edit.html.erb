@@ -1,4 +1,4 @@
-<h1>Edit user</h1>
+<h1>Редактировать пользователя</h1>
 
 <%= form_for(@user) do |f| %>
   <%= render 'shared/error_messages', :object => f.object %>
@@ -15,10 +15,10 @@
     <%= f.password_field :password %>
   </div>
   <div class="field">
-    <%= f.label :password_confirmation, "Confirmation" %><br />
+    <%= f.label :password_confirmation, "Подтверждение" %><br />
     <%= f.password_field :password_confirmation %>
   </div>
   <div class="actions">
-    <%= f.submit "Update" %>
+    <%= f.submit "Обновить" %>
   </div>
 <% end %>

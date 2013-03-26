@@ -13,8 +13,8 @@
   </table>
 <% else %>
 
-  <h1>Sample App</h1>
+  <h1>Личный кабинет</h1>
 
-<p>This is the home page for the sample application.</p>
-<%= link_to "Sign up now!", signup_path, :class => "signup_button round" %>
+<p>Это начальная страница. Если вы новый пользователь, здесь вы можете зарегистрироваться или войти в систему, используя свои данные. </p>
+<%= link_to "Зарегистрироваться!", signup_path, :class => "signup_button round" %>
 <% end %>
