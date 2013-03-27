@@ -1,6 +1,6 @@
 .container {
-  width: auto;
-  margin-right: 10em;
+  width: 80%;
+  margin: 0 auto; 
 }
 
 body {
@@ -9,16 +9,20 @@ body {
 }
 
 header {
-	padding-top: 20px;
+	padding: 20px 0;
 	margin-left: auto;
+	padding-top: 20px;
+	float: right;
 	
 }
+
 section {
   color: #09c;
   margin-top: 1em;
-  margin-left: 5em;
-  font-size: 120%;
+/*  margin-left: 5em;
   padding: 100px;
+*/
+  font-size: 120%;
   background: #fff;
 }
 /*Zagolovok sample app*/
@@ -48,7 +52,7 @@ a:visited {
 
 header nav {
         float: right;
-	margin-right: -15em;
+	/*margin-right: -15em;*/
 }
 
 nav {
@@ -88,8 +92,7 @@ footer nav {
 footer {
   text-align: center;
   margin-top: 10px;
-  width: auto;
-  margin-left: 6em;
+  width: 100%;
   font-weight: bold;
   /*margin-right: 1em;*/
 }
@@ -118,4 +121,6 @@ a.signup_button {
   border-radius:         10px;
 }
 
-
+.container section{
+	clear: both;
+}
