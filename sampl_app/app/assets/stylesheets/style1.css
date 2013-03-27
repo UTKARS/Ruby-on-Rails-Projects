@@ -1,27 +1,29 @@
 .container {
-  width: auto;
-  margin-right: 10em;
+  width: 710px;
 }
 
 body {
-	background: #cff;
-	
+	margin: 0;
+	padding: 0;
+	background: #276020;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: 200;
+	color: #61D953;
 }
 
 header {
-	padding-top: 20px;
-	margin-left: auto;
-	
+	width: 710px;
+	height: 15px;
+	margin: 0 auto;
 }
 section {
-  color: #09c;
   margin-top: 1em;
-  margin-left: 5em;
   font-size: 120%;
-  padding: 100px;
+  padding: 20px;
   background: #fff;
 }
-/*Zagolovok sample app*/
+
 section h1 {
   font-size: 200%;
 }
@@ -36,19 +38,18 @@ a:hover {
   color: #0a9;
   text-decoration: underline;
   background-color: #D6EBFF;
-  -moz-border-radius:    10px;
-  -webkit-border-radius: 10px;
-  border-radius:         10px;
+  -moz-border-radius:    4px;
+  -webkit-border-radius: 4px;
+  border-radius:         4px;
 }
 
 a:visited {
-  color: #069;
+  color: 	#E0A3FF;
 }
 /* Navigation */
 
 header nav {
-        float: right;
-	margin-right: -15em;
+  float: right;
 }
 
 nav {
@@ -61,7 +62,6 @@ nav {
 nav ul {
   margin: 0;
   padding: 0;
-	
 }
 
 nav ul li {
@@ -82,34 +82,17 @@ nav ul li a:visited {
 nav ul li a:hover {
   text-decoration: underline;
 }
-footer nav {
-  float: center;
-}
 footer {
   text-align: center;
   margin-top: 10px;
-  width: auto;
-  margin-left: 6em;
-  font-weight: bold;
-  /*margin-right: 1em;*/
-}
-
-
-/* Sign up button */
-
-a.signup_button {
+  width: 710px;
   margin-left: auto;
   margin-right: auto;
-  display: block;
-  text-align: center;
-  width: 200px;
-  color: #fff;
-  background: #3E90ED;
-  font-size: 100%;
-  font-weight: bold;
-  padding: 20px;
 }
 
+footer nav {
+  float: none;
+}
 /* Round corners */
 
 .round {
