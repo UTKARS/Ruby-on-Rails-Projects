@@ -8,7 +8,7 @@ class PagesController < ApplicationController
   end
 
   def contact
-    @title = "Contact"
+    @title = "asfa"
   end
 
   def about
