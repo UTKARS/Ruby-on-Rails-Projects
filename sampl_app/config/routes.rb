@@ -11,11 +11,12 @@ SamplApp::Application.routes.draw do
   match '/signout', :to => 'sessions#destroy'
   
   get "pages/home"
-
+  get "lesson_sched/index"
+  	
   get "pages/contact"
 
   get "pages/about"
-
+  #match '/uploadfile', :to=>'lessons_sched#uploadfile'
   match '/contact', :to => 'pages#contact'
   match '/about',   :to => 'pages#about'
   match '/help',   :to => 'pages#help'
