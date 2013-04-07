@@ -1,11 +1,13 @@
-class LessonSchedController < ApplicationController
+#encoding: utf-8
+ class LessonSchedController < ApplicationController
  def index
      render :file => 'app/views/lesson_sched/index.html.erb'
   end
   def uploadFile
-    post = DataFile.save(params[:upload])
+    #post = DataFile.save(params[:upload])
 	uploaded_file = params[:file]
 	file_content = uploaded_file.read
-    render :text => "File has been uploaded successfully"
+        
+    render :text => "Данные успешно загружены! "
   end
 end

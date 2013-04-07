@@ -1,5 +1,5 @@
+#encoding: utf-8
 module SessionsHelper
-   
 	def sign_in(user)
     cookies.permanent.signed[:remember_token] = [user.id, user.salt]
     self.current_user = user
@@ -23,7 +23,7 @@ module SessionsHelper
 
   def deny_access
     store_location
-    redirect_to signin_path, :notice => "Please sign in to access this page."
+    redirect_to signin_path, :notice => "Пожалуйста зарегистрируйтесь для доступа на эту страницу."
   end
 
 	def redirect_back_or(default)
@@ -37,7 +37,7 @@ module SessionsHelper
 
   def deny_access
     store_location
-    redirect_to signin_path, :notice => "Please sign in to access this page."
+    redirect_to signin_path, :notice => "Пожалуйста зарегистрируйтесь для доступа на эту страницу."
   end
 
   private

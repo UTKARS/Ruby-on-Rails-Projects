@@ -11,8 +11,8 @@ SamplApp::Application.routes.draw do
   match '/signout', :to => 'sessions#destroy'
   
   get "pages/home"
-  get "lesson_sched/index"
-  	
+  match "lesson_sched/index"
+  post "lesson_sched/uploadFile"	
   get "pages/contact"
 
   get "pages/about"

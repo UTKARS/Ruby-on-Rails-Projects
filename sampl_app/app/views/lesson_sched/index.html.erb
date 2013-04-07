@@ -1,5 +1,7 @@
-<h1>File Upload</h1>
-<%= form_tag 'lesson_sched/uploadFile', :multipart => true do %>
-<label for="file">Upload text File</label> <%= file_field_tag "file" %>
+<% if current_user.admin? %>
+<h1>Зайгрузка расписания </h1>
+<%= form_tag 'uploadFile', :multipart => true do %>
+<label for="file">Выберите файл</label> <%= file_field_tag "file" %>
    <%= submit_tag %>
 <% end %>
+<%end%>

@@ -1,4 +1,5 @@
-class SessionsController < ApplicationController
+#encoding: utf-8
+ class SessionsController < ApplicationController
    def new
     @title = "Sign in"
   end
