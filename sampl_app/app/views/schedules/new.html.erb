@@ -1,0 +1,16 @@
+<%= form_for(@schedule) do |f|%>
+    <%= @schedule.errors.inspect %>
+    <%= @schedule.myfile.inspect %>
+    <p>
+      <%= f.label :year %><br />
+      <%= f.text_field :year %>
+    </p>
+    <p>
+      <%= f.label :semester %><br />
+      <%= f.text_field :semester %>
+    </p>
+    <p><label for="file">Выберите файл</label> <%= f.file_field(:myfile) %></p>
+    <p>
+      <%= f.submit "Create" %>
+    </p>
+<% end %>

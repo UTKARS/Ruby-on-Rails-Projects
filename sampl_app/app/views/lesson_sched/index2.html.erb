@@ -1,0 +1,14 @@
+<%= form_for(@product) do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :year %><br />
+    <%= f.text_field :year %>
+  </p>
+  <p>
+    <%= f.label :semester %><br />
+    <%= f.text_field :semester %>
+  </p>
+  <p>
+    <%= f.submit "Create" %>
+  </p>
+<% end %>

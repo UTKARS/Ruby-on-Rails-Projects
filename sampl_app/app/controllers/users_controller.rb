@@ -4,7 +4,7 @@ before_filter :authenticate, :only => [:index, :edit, :update]
 before_filter :correct_user, :only => [:edit, :update]
 before_filter :admin_user,   :only => :destroy  
 
-	def index
+  def index
     @title = "Все пользователи"
     @users = User.paginate(:page => params[:page])
   end
@@ -68,4 +68,4 @@ private
       redirect_to(root_path) unless current_user.admin?
     end
 end
-end
+
