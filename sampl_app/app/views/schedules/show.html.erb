@@ -1,0 +1,37 @@
+<%= form_for @schedule, :method => 'get', :url => url_for(:controller => 'schedules', :action => 'show') do |f|%>
+    <p>
+      Группа <br />
+      <%= f.select :group_id, options_from_collection_for_select(@groups, "id", "name") %>
+    </p>
+    <p>
+      <%= f.submit "Просмотр" %>
+    </p>
+<% end %>
+<% if not @sch.blank? %>
+
+<h1><%= @sch.group.name %></h1>
+
+<table>
+  <tr>
+    <th>Номер пары</th>
+    <th>Название</th>
+    <th>Кабинет</th>
+  </tr>
+  <% day = 0 %>
+  <% @sch.lessons.each do |lesson| %>
+      <tr>
+        <% if day != lesson.day %>
+            <td colspan="3">
+                <%= lesson.getDayName %>
+                <% day = lesson.day %>
+            </td>
+        <% else %>
+        <td><%= lesson.number %></td>
+        <td><%= lesson.name %></td>
+        <td><%= lesson.room %></td>
+        <% end %>
+      </tr>
+  <% end %>
+</table>
+
+<% end %>

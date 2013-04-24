@@ -3,6 +3,7 @@ SamplApp::Application.routes.draw do
 
   
   resources :users
+  resources :SchedulesController
   resources :sessions, :only => [:new, :create, :destroy]
 	resources :microposts, :only => [:create, :destroy]
   match '/signup',  :to => 'users#new'
@@ -11,8 +12,8 @@ SamplApp::Application.routes.draw do
   match '/signout', :to => 'sessions#destroy'
   
   get "pages/home"
-  match "lesson_sched/index"
-  post "lesson_sched/uploadFile"	
+  #match "lesson_sched/index"
+  #post "lesson_sched/uploadFile"	
   get "pages/contact"
 
   get "pages/about"
@@ -77,5 +78,5 @@ SamplApp::Application.routes.draw do
 
   # This is a legacy wild controller route that's not recommended for RESTful applications.
   # Note: This route will make all actions in every controller accessible via GET requests.
-  # match ':controller(/:action(/:id))(.:format)'
+  match ':controller(/:action(/:id))(.:format)'
 end
